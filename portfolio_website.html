@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <style>
+        *{
+            background-color: rgb(0, 20, 0);
+            padding: 0;
+            margin: 0;
+            color: whitesmoke;
+            /* font-family: Times, Times New Roman, serif; */  
+            /* font-family: 'poppins-bold', sans-serif ; */
+            
+        }
+        .nav{
+            background-color: rgb(4, 36, 4) ;
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+            /* font-family:Andale Mono, monospace !important; */
+            font-family: 'poppins-bold', sans-serif ;
+            height: 15vh;
+            
+            
+        }
+        .right{
+            font-size: 25px;
+            margin: 20px;
+            background-color: rgb(5, 38, 5) ;
+            display: flex;
+            align-items: center;
+        }
+        .left{
+            font-size: 35px;
+            margin: 15px;
+            background-color: rgb(5, 38, 5) ;
+            display: flex;
+            align-items: center;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 70px;
+            list-style: none;
+            background-color: rgb(5, 38, 5) ;
+        }
+        ul li a{
+            background-color: rgb(5, 38, 5) ;
+        }
+        ul li a:hover{
+           color: rgb(167, 167, 245);
+        }
+        .first{
+            display: flex;
+            justify-content: space-around;
+            font-size: 50px;
+            font-family:Andale Mono, monospace !important;
+            
+            
+            /* gap: 70px;
+            margin: 10px 400px; */
+        }
+        .leftsection{
+            /* background-color: red; */
+            height: 90vh;
+            width: 40%;
+            position: relative;
+            top: 30vh;
+            left: 10vw;
+        }
+        .rightsection{
+            /* background-color: blue; */
+            position: relative;
+            top: 15vh;
+            left: 5vw;
+            height: 90vh;
+            width: 40%;
+        }
+
+        .second{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+            /* top: 20vh; */
+
+        }
+        .about{
+            /* background-color: red; */
+            height: 40vh;
+            width: 40vw;
+            position: relative;
+            left: -25vh;
+        }
+        .h2{
+            font-size:60px ;
+            font-family: fantasy;
+            color: rgb(73, 169, 73);
+        }
+        .p{
+            font-size: 30px;
+            font-family: cursive;
+            margin: 40px 0;
+        }
+        .photo{
+            /* background-color: blue; */
+            height: 40vh;
+            width: 40vw;
+            position: relative;
+            left: 10vh;
+            top: 10vh;
+            
+        }
+        img{
+            border-radius: 15px;
+        }
+
+        .third{
+            height: 80vh;
+            position: relative;
+            top: 50vh;
+            left: 30vh;
+        }
+        .h1{
+            font-size: 60px;
+            /* margin: auto; */
+            width: 30vw;
+            /* background-color: red; */
+            
+            font-family: fantasy;
+            color: rgb(73, 169, 73);
+            
+        }
+        .project{
+            display: flex;
+            /* background-color: rebeccapurple; */
+            /* justify-content: space-around; */
+            gap: 25vh;
+            position: relative;
+            top: 10vh;
+           
+           
+
+        }
+        .projects{
+            background-color: rgb(212, 236, 212);
+           width: 40vh;
+           height: 50vh;
+           border-radius: 20px;
+           box-shadow: 6px 6px 10px 3px rgba(157, 248, 157, 0.655);
+
+
+        }
+        .projects:hover{
+            transform: scale(1.1);
+            transition-duration: 900ms;
+            
+        }
+
+        .head{
+            font-size: 30px;
+            position: relative;
+            width: 30vh;
+            top: 4vh;
+            left: 2vh;
+            background-color: rgb(212, 236, 212);
+            color: darkgreen;
+            font-family: Times, Times New Roman, serif;
+
+        }
+        div p{
+            color: black;
+            background-color:  rgb(212, 236, 212);
+            position: relative;
+            top: 8vh;
+            width: 30vh;
+            left: 30px;
+            font-size: 20px;
+            /* font-family: cursive; */
+        }
+        .read{
+            position: relative;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            top: 14vh;
+            width: 15vh;
+            left: 12vh;
+            background-color: rgb(52, 91, 52);
+        }
+        .read:hover{
+            background-color: rgb(168, 233, 168);
+            color: black;
+            transform: scale(1.3);
+            transition-duration: 900ms;
+        }
+        .forth{
+            border: 2px solid r;
+            position: relative;
+            top: 50vh;
+            height: 200vh;
+            /* display: grid;
+            grid-template-columns: 40% 60%; */
+            display: flex;
+            gap: 30px;
+        }
+        .h3{
+            position: relative;
+            left: 40%;
+            top: 10vh;
+            font-size: 80px;
+            font-family: fantasy;
+            color: rgb(73, 169, 73);
+        }
+        .lefts{
+            /* border: 2px solid yellow; */
+            width: 60%;
+            position: relative;
+            top: 40vh;
+            left: -15vh;
+        
+        }
+
+        .lefts img{
+            margin: 8vh 0vh;
+        }
+
+        .rights{
+            /* border: 2px solid white; */
+            width: 80%;
+            position: relative;
+            top: 30vh;
+            left: -10vh;
+            display: grid;
+            grid-template-columns: 25vw 25vw;
+            grid-template-rows: 30vw 30vw ;
+            gap: 8vh;
+            
+        }
+        .skills{
+            /* border: 2px solid red; */
+            border-radius: 20px;
+            background-color: rgb(212, 236, 212);
+            box-shadow: 7px 7px 20px 3px rgba(157, 248, 157, 0.475);
+        }
+        
+        
+
+
+        .skillname{
+            font-size: 40px;
+            font-family: fantasy;
+            /* font-weight: bold; */
+            width: 20vh;
+            position: relative;
+            left: 20vh;
+            top: 5vh;
+            background-color: rgb(212, 236, 212);
+            color: rgb(37, 138, 37);
+        }
+        .skillphoto{
+            position: relative;
+            top: 12vh;
+            left: 14vh;
+            background-color: rgb(212, 236, 212);
+            width: 40vh;
+        }
+        
+        .skillphoto>img{
+            background-color: rgb(212, 236, 212);
+        }
+        .skillphoto>img:hover{
+            background-color: rgb(212, 236, 212);
+            transform: scale(1.1);
+            transition-duration: 1000ms;
+        }
+        .l3{
+            position: relative;
+            left: 10vh;
+            top: 11vh;
+
+        }
+        .l4{
+            position: relative;
+            left: 10vh;
+            top: 6vh;
+          
+
+        }
+        .skillinfo{
+            font-size: 20px;
+            background-color: rgb(212, 236, 212);
+            color: black;
+            position: absolute;
+            top: 45vh;
+            padding: 23px;
+            width: 50vh;
+        }
+        .skillinfo1{
+            font-size: 20px;
+            background-color: rgb(212, 236, 212);
+            color: black;
+            position: absolute;
+            top: 120vh;
+            padding: 23px;
+            width: 50vh;
+        }
+        .footer{
+            height: 120vh;
+        }
+
+        .h4{
+            position: relative;
+            left: 12vh;
+            top: 50vh;
+            font-size: 70px;
+            font-family: fantasy;
+            color: rgb(73, 169, 73);
+        }
+        .contacts{
+            position: relative;
+            top: 80vh;
+            left: 10vh;
+            display: inline;
+            margin: 20px;
+        }
+        .mails>p{
+            font-size: 40px;
+            color: whitesmoke;
+            background:   rgb(0, 20, 0);
+            width: 70vh;
+            position: relative;
+            top: 60vh;
+            left: 12vh;
+        }
+        
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="left">
+            Vaishnav's portfolio
+        </div>
+        <div class="right">
+           <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">projects</a></li>
+            <li><a href="/">Contact me</a></li>
+           </ul> 
+        </div>
+    </div>
+    <div class="main">
+        <div class="first">
+            <div class="leftsection">
+                Hi, My name is Vaishnav
+                <div class="p1">And I am a web developer</div>
+            </div>
+            <div class="rightsection">
+                <img src="develop.png" alt="" width="60%">
+            </div>
+        </div>
+
+        <div class="second">
+            <div class="photo">
+                <img src="Vaishnav Patil photo.jpg" alt="" width="35%">
+            </div>
+            <div class="about">
+                <div class="h2">About</div>
+                <div class="p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam deleniti velit quasi iusto quod labore dolore perferendis magnam architecto illo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, officia. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit, beatae deleniti error ad voluptatem quo?</div>
+            </div>
+           
+        </div>
+        
+        <div class="third">
+            <div class="h1">Projects</div>
+            <div class="project">
+                <div class="projects">
+                    <div class="head">Fitness-trackker</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facilis recusandae adipisci sint perferendis magnam hic vero pariatur cumque deleniti placeat, non, corporis accusantium quis nisi eius aliquam excepturi autem.</p>
+                    <div class="read">Read more +</div>
+                </div>
+                <div class="projects">
+                    <div class="head">Local-me app</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ratione laudantium, praesentium cum illo dolorem dolorum officiis quidem porro totam perspiciatis debitis necessitatibus, optio aliquid ea sint, obcaecati esse quod?</p>
+                    <div class="read">Read more +</div>
+                </div>
+                <div class="projects">
+                    <div class="head">Comercial website</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nisi culpa illum autem quidem beatae, inventore, eum nihil suscipit, provident laboriosam impedit harum dignissimos quis sint odio? Aspernatur, deleniti sint!</p>
+                    <div class="read">Read more +</div>
+                </div>
+            </div>
+        </div>
+        <div class="forth">
+            <div></div>
+            <div class="h3">Skills</div>
+            <div class="lefts">
+                <img src="skill.png" alt="">
+                <img src="skills.webp" alt="">
+            </div>
+            <div class="rights">
+                <div class="skills">
+                    <div class="skillname">HTML</div>
+                    <div class="skillphoto l1"><img src="html.png" alt="" width="60%"></div>
+                    <div class="skillinfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus amet sit doloremque aspernatur, eligendi omnis iure. Dolore, voluptates. In, totam.</div>
+                </div>
+                <div class="skills">
+                    <div class="skillname ">&nbsp;C++</div>
+                    <div class="skillphoto l2"><img src="cpp.png" alt="" width="50%"></div>
+                    <div class="skillinfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus amet sit doloremque aspernatur, eligendi omnis iure. Dolore, voluptates. In, totam.</div>
+                </div>
+                <div class="skills">
+                    <div class="skillname">CSS</div>
+                    <div class="skillphoto l3"><img src="css.png" alt="" width="70%"></div>
+                    <div class="skillinfo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus amet sit doloremque aspernatur, eligendi omnis iure. Dolore, voluptates. In, totam.</div>
+                </div>
+                <div class="skills">
+                    <div class="skillname">Cyber Security</div>
+                    <div class="skillphoto l4"><img src="cyber.png" alt=""  width="80%"></div>
+                    <div class="skillinfo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus amet sit doloremque aspernatur, eligendi omnis iure. Dolore, voluptates. In, totam.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="h4">Contact Me</div>
+        <div class="mails">
+            <p>Contact me through email- <a href="vaishnav.b.patil12@gmail.com">click here</a></p>
+            <br><br>
+            <p>Visit my website- <a href="vaishnav.b.patil12@gmail.com">click here</a></p>
+        </div>
+        <div class="contacts">
+            <img src="insta.jpg" alt="" width="4%">
+        </div>
+        <div class="contacts">
+            <img src="facebook.jpg" alt="" width="4%">
+        </div>
+        <div class="contacts">
+            <img src="teitter.jpg" alt="" width="4%">
+        </div>
+    </div>
+</body>
+</html>
